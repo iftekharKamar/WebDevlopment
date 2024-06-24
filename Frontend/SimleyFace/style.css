@@ -1,0 +1,33 @@
+.outer{
+    height: 400px;
+    width: 400px;
+    background-color: darkgoldenrod;
+    border-radius: 50%;
+}
+
+.left-eye,.right-eye{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    display: inline-block;
+    background-color: black;
+    position:absolute;
+    top :100px;
+    left: 100px;
+   
+
+}
+.mouth{
+    height: 75px;
+    width: 200px;
+    background-color: brown;
+    position: absolute;
+    top:250px;
+    left: 100px;
+    border-radius: 0 0 50px 50px;
+    
+}
+
+.right-eye{
+    left:250px;
+}
