@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>All Tasks</h1>
+    
+  <div class="outer">
+        <% for(task of tasks) { %>
+            <div class="inner">
+                <p class="title"><%= task.title %></p> 
+                <div id="desc">
+                <p class="descp"><%= task.description %></p>
+               </div>
+              <div class="btn"> 
+                    <a href="http://localhost:8080/tasks/<%= task.id %>" class="detail"><i class="fa-solid fa-circle-info btns"></i>Details</a>
+            
+                      <a href="http://localhost:8080/tasks/<%= task.id %>/edit" class="edit"><i class="fa-solid fa-file-pen btns"></i>Edit</a>
+                     <form method="post" action="/tasks/<%= task.id %>?_method=DELETE">
+                       <button><i class="fa-solid fa-trash "></i> Delete</button>
+                     </form>
+            
+                </div>
+            </div>
+       
+        <% } %>
+        <div class="add inner">
+            <a href="http://localhost:8080/tasks/new"><i class="fa-solid fa-plus"></i>Add New Task</a>
+        </div>
+    </div>
+    <br>
+    <br>
+   
+</body>
+</html>

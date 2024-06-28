@@ -1,0 +1,29 @@
+body{
+    background-color: black;
+}
+
+.title{
+    display: flex;
+    justify-content: start;
+    margin-left: 10px;
+    color: white;
+  
+
+}
+.desc{
+    margin-left: 70px;
+   color: white;
+   background-color: #404040;
+   height: 50vh;
+   width: 60vh;
+   border-radius: 20px;
+   padding: 20px;
+
+}
+p{
+    margin-left: 10px;
+    background-color: #202020;
+    height: 180px;
+    border-radius: 20px;
+    padding: 20px;
+}
