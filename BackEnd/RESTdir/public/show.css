@@ -1,19 +1,23 @@
 body{
-    background-color: black;
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    background-color: #EBF4F6;
+    color: #1b2651;
+    overflow:hidden;
 }
 
 .title{
     display: flex;
     justify-content: start;
     margin-left: 10px;
-    color: white;
+    color: 	#1b2651;
   
 
 }
 .desc{
     margin-left: 70px;
-   color: white;
-   background-color: #404040;
+   color:	#1b2651;
+   background-color: #edeae1;
    height: 50vh;
    width: 60vh;
    border-radius: 20px;
@@ -22,7 +26,8 @@ body{
 }
 p{
     margin-left: 10px;
-    background-color: #202020;
+    background-color: #166c96;
+    color: #ffffff;
     height: 180px;
     border-radius: 20px;
     padding: 20px;
