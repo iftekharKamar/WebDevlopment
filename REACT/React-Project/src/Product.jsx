@@ -19,5 +19,4 @@ function Product({title,price,features}){
 
 // }
 
-
 export default Product;
