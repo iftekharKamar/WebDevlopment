@@ -6,16 +6,13 @@ const Form = () => {
         fullName: "",
         userName: ""
     });
-
     const handleSubmit = (event) => {
         event.preventDefault();
-        console.log(formData);
         setFormData({
             fullName: "",
             userName: ""
         });
-    };
-
+    };   
     const handleChange = (event) => {
         const { name, value } = event.target;
         setFormData({
